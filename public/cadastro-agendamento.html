@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Agendamento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-cliente.html">Cadastrar Cliente</a></li>
+                <li><a href="cadastro-profissional.html">Cadastrar Profissional</a></li>
+                <li><a class="selecionado" href="cadastro-agendamento.html">Cadastrar Agendamento</a></li>
+                <li><a href="consulta.html">Consultar Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro de Agendamento</h2>
+        <form id="formCadastroAgendamento">
+            <label for="cpfCliente">CPF do Cliente:</label>
+            <input type="text" id="cpfCliente" name="cpf_cliente" placeholder="CPF do Cliente" required />
+
+            <label for="cpfProfissional">CPF do Profissional:</label>
+            <input type="text" id="cpfProfissional" name="cpf_profissional" placeholder="CPF do Profissional" required />
+
+            <label for="dataAgendamento">Data:</label>
+            <input type="date" id="dataAgendamento" name="data" required />
+
+            <label for="horarioAgendamento">Horário:</label>
+            <input type="time" id="horarioAgendamento" name="horario" required />
+
+            <label for="salaAgendamento">Sala:</label>
+            <input type="text" id="salaAgendamento" name="sala" placeholder="Sala" required />
+
+            <button onclick="cadastrarAgendamento()" type="submit">Cadastrar Agendamento</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Sistema de Agendamento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
